@@ -22,10 +22,10 @@ function Home () {
              <div>
                <img src={Profile} alt="Profile" className='w-20 rounded-[50px] mt-10'/>         
              </div>
-             <div class="mt-[30px] text-[14px] leading-normal text-neutral-500 font-medium">
+             <div className="mt-[30px] text-[14px] leading-normal text-neutral-500 font-medium">
                <p>Hi, I am Rizal Herlangga, a Frontend Developer in Jakarta, Indonesia. I have been working as a Frontend Developer for more than a year. I build visually stunning and user-friendly web application experiences. I'm looking forward to collaborating with you!</p>
              </div>
-             <div class="mt-[10px] flex text-neutral-900 font-normal text-[15px]">
+             <div className="mt-[10px] flex text-neutral-900 font-normal text-[15px]">
                <div>
                  <a href="mailto:rizsut03@gmail.com" target="_blank" rel="noreferrer" className='text-body1 font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 inline-flex items-center gap-1 duration-150 w-fit'>
                      <FontAwesomeIcon icon="fa-regular fa-envelope" />
