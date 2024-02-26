@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Profile from '../assets/images/dudung.jpg'
 import Card from '../components/Card'
 import CardProject from "../components/CardProject";
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -41,26 +42,26 @@ function Home () {
                </div>
              </div>
              <div>
-               <a href="#" rel="noreferrer" className='text-body1 font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 inline-flex items-center gap-1 duration-150 w-fit mt-2'>
+               <Link to='/about' className='text-body1 font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 inline-flex items-center gap-1 duration-150 w-fit mt-2'>
                   <p>More About Me</p>
                   <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-               </a>
+               </Link>
              </div>
              <h5 className='mt-[24px] text-[25px] font-medium mb-5'>Work Experiences</h5>
              <Card />
              <div className='mt-4 '>
-              <a href="#" className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>
+              <Link to='/experiences' className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>
                   <p>View All Experiences</p>
                   <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-              </a>
+              </Link>
              </div>
              <h3 className='text-[18px] font-medium mt-9'>Selected Projets</h3>
              <CardProject />
              <div className='mt-4 '>
-              <a href="#" className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>
+              <Link to='/projects' className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>
                   <p>View All Projects</p>
                   <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-              </a>
+              </Link>
              </div>
              <Footer />
            </div>
