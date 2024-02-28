@@ -1,5 +1,3 @@
-import Dumbways from '../assets/images/dumbways.png'
-import PHima from '../assets/images/Logo_HIMA_TI.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -11,27 +9,9 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 library.add(faEnvelope, faGripLinesVertical, faArrowDown, faArrowRight, faCircleChevronRight, faArrowUpRightFromSquare, faCopyright)
 
-function CardProject () {
-    const dataCard = [
-        {
-          year: "2023",
-          project: "My Project",
-          title: "Project Web",
-          desc: "Website that I created to do a task",
-          tech: "JavaScript, CSS, HTML",
-          image: Dumbways,
-          projectLink: "https://rizalherlangga-b49s1-task9.netlify.app/testimonial"
-        },
-        {
-          year: "2022",
-          project: "HIMATI",
-          title: "HIMATI Web",
-          desc: "Website about faculty information",
-          tech: "Next JS, Tailwind CSS",
-          image: PHima,
-          projectLink: "https://himati-web.vercel.app/"
-        }
-      ]
+
+
+function TempProjects({dataCard}) {
     return (
       <>
         {dataCard.map((card, index) => (
@@ -61,4 +41,4 @@ function CardProject () {
     )
 }
 
-export default CardProject;
+export default TempProjects;

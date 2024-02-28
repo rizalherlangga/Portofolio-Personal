@@ -1,8 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Profile from '../assets/images/dudung.jpg'
-import Card from '../components/Card'
-import CardProject from "../components/CardProject";
+import Card from '../components/project-experiences/Card'
+import DataExper from '../components/project-experiences/DataExper'
+import TempProjects from "../components/card-projects/TempProjects";
+import projectData from "../components/card-projects/projectData"
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,6 +18,9 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 library.add(faEnvelope, faGripLinesVertical, faArrowDown, faArrowRight, faCircleChevronRight, faArrowUpRightFromSquare, faCopyright)
 
 function Home () {
+  
+  const selectedData = projectData.slice(0,1);
+  const selectedExpre = DataExper.slice(0,1);
     return (
         <>
            <div className="max-w-xl mx-auto px-2 py-8">
@@ -48,7 +53,7 @@ function Home () {
                </Link>
              </div>
              <h5 className='mt-[24px] text-[25px] font-medium mb-5'>Work Experiences</h5>
-             <Card />
+             <Card CardData = {selectedExpre}/>
              <div className='mt-4 '>
               <Link to='/experiences' className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>
                   <p>View All Experiences</p>
@@ -56,7 +61,7 @@ function Home () {
               </Link>
              </div>
              <h3 className='text-[18px] font-medium mt-9'>Selected Projets</h3>
-             <CardProject />
+             <TempProjects dataCard={selectedData} />
              <div className='mt-4 '>
               <Link to='/projects' className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>
                   <p>View All Projects</p>

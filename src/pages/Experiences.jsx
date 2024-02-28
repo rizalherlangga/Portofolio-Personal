@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import CardEx from '../components/Card'
+import Card from '../components/project-experiences/Card'
+import DataExper from '../components/project-experiences/DataExper'
 
 function Experiences () {
     return(
@@ -9,7 +10,7 @@ function Experiences () {
           <Navbar />
           <h1 className='mt-[100px] text-[25px] font-medium'>Experiences</h1>
           <br />
-          <CardEx />
+          <Card CardData = {DataExper}/>
           <Footer />
         </div>
         </>
