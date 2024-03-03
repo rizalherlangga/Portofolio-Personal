@@ -1,10 +1,12 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Profile from '../assets/images/dudung.jpg'
-import Card from '../components/project-experiences/Card'
-import DataExper from '../components/project-experiences/DataExper'
-import TempProjects from "../components/card-projects/TempProjects";
-import projectData from "../components/card-projects/projectData"
+import Profile from '../assets/images/dudung.jpg';
+import Card from '../components/Card';
+import DataExper from '../lib/DataExper';
+import TempProjects from "../components/TempProjects";
+import projectData from "../lib/projectData";
+import AnimatedText from "../components/AnimatedText";
+import DataAnimatedText from "../lib/DataAnimatedText";
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -21,15 +23,19 @@ function Home () {
   
   const selectedData = projectData.slice(0,1);
   const selectedExpre = DataExper.slice(0,1);
+  console.log();
     return (
         <>
-           <div className="max-w-xl mx-auto px-2 py-8">
+           <div className="mx-auto max-w-[576px] px-7 py-2 ">
              <Navbar />
              <div>
-               <img src={Profile} alt="Profile" className='w-20 rounded-[50px] mt-10'/>         
+               <img src={Profile} alt="Profile" className='w-[120px] rounded-[70px] mt-10'/>         
              </div>
-             <div className="mt-[30px] text-[14px] leading-normal text-neutral-500 font-medium">
-               <p>Hi, I am Rizal Herlangga, a Frontend Developer in Jakarta, Indonesia. I have been working as a Frontend Developer for more than a year. I build visually stunning and user-friendly web application experiences. I'm looking forward to collaborating with you!</p>
+             <div className="mt-[15px]">
+               <AnimatedText texts={DataAnimatedText} />
+             </div>
+             <div className="mt-[15px] text-[14px] leading-normal text-neutral-500 font-medium">
+               <p>Hi, I'm Rizal Herlangga, FullStack Developer in Jakarta, Indonesia. I am someone who is very interested in this field and excited to start my career in the industry. Although I am a recent graduate, I have a strong foundation in skills and a determination to learn and contribute. I am excited to apply my knowledge and grow professionally, and I look forward to the opportunity to collaborate with you and contribute to your team's success!</p>
              </div>
              <div className="mt-[10px] flex text-neutral-900 font-normal text-[15px]">
                <div>
@@ -60,7 +66,7 @@ function Home () {
                   <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
               </Link>
              </div>
-             <h3 className='text-[18px] font-medium mt-9'>Selected Projets</h3>
+             <h3 className='text-[18px] font-medium mt-9 mb-4'>Selected Projets</h3>
              <TempProjects dataCard={selectedData} />
              <div className='mt-4 '>
               <Link to='/projects' className='flex gap-2 items-center font-medium hover:border-b-[1.5px] hover:border-b-neutral-900 w-fit'>

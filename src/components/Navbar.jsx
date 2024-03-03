@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 function Navbar () {
     return (
-        <nav className='mb-10'>
-            <div className="flex justify-between items-center">
+        <nav className='mb-10 mt-4'>
+            <div className="flex justify-between items-center flex-col gap-2 sm:flex-row sm:justify-between">
                 <div className="flex items-center">
                  <Link to = "/">
                     <img src={Logo} alt="Logo" className='w-[75px]'/>

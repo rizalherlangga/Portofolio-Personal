@@ -10,7 +10,7 @@ library.add(faArrowDown)
 function About () {
     return(
         <>
-        <div className="max-w-xl mx-auto px-2 py-8">
+        <div className="max-w-xl mx-auto px-7 py-2 ">
           <Navbar />
           <div>
             <img src={Profile} alt="Profile" className='w-28 rounded-[85px] mt-10'/>         

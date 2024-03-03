@@ -15,7 +15,7 @@ function Card({ CardData }) {
         <>
             {CardData.map((card, index) => (
                 <div key={index} className="space-y-1 shadow-md py-4 px-6 rounded-md border-t-2 border-t-neutral-900 mb-[25px]">
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                         <h3 className='text-[23px] font-medium'>{card.job}</h3>
                         <p className='text-[15px] font-medium text-gray-500'>{card.date}</p>
                     </div>
@@ -27,7 +27,7 @@ function Card({ CardData }) {
                     <div>
                         <h5 className='text-[18px] font-medium mb-[3px]'>Responsibilities :</h5>
                         {card.res.map((responsibility, resIndex) => (
-                            <div key={resIndex} className="flex items-start gap-1 sm:gap-2 text-body2 pl-[13px]">
+                            <div key={resIndex} className="flex items-start gap-3 sm:gap-2 text-body2 pl-[5px]">
                                 <FontAwesomeIcon icon={faCircleChevronRight} className=' text-[13px] mt-[4px]' />
                                 <p className=''>{responsibility}</p>
                             </div>
