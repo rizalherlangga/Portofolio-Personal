@@ -1,4 +1,5 @@
-import Dumbways from '../assets/images/dumbways.png'
+import Dumbways from '../assets/images/dumbways.png';
+import Airbnb from '../assets/images/airbnb.png'
 // import PHima from '../assets/images/Logo_HIMA_TI.png'
 
 const projectData = [
@@ -10,7 +11,16 @@ const projectData = [
       tech: "JavaScript        ·        CSS        ·       HTML",
       image: Dumbways,
       projectLink: "https://rizalherlangga-b49s1-task9.netlify.app/testimonial"
-    }
+    },
+    {
+      year: "2024",
+      project: "Project Team",
+      title: "Project FullStack Web",
+      desc: "Website that I created to do a task",
+      tech: "React Js        ·        Express Js        ·       MySQL        ",
+      image: Airbnb,
+      projectLink: "https://rizalherlangga-b49s1-task9.netlify.app/testimonial"
+    },
     // {
     //   year: "2022",
     //   project: "My Project",
