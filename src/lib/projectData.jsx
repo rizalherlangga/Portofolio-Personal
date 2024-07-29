@@ -1,5 +1,5 @@
 import Dumbways from '../assets/images/dumbways.png';
-import Airbnb from '../assets/images/airbnb.png'
+import Airbnb from '../assets/images/airbnb.png';
 // import PHima from '../assets/images/Logo_HIMA_TI.png'
 
 const projectData = [
@@ -19,7 +19,7 @@ const projectData = [
       desc: "Website that I created to do a task",
       tech: "React Js        ·        Express Js        ·       MySQL        ",
       image: Airbnb,
-      projectLink: "https://rizalherlangga-b49s1-task9.netlify.app/testimonial"
+      projectLink: "#"
     },
     // {
     //   year: "2022",
